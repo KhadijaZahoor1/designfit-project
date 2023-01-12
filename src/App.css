@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.boxShadow {
+  background: linear-gradient(180deg, #1d1d1b 0%, rgba(29, 29, 27, 0) 100%);
+  opacity: 0.8;
+}
+.bgClr {
+  background: linear-gradient(90deg, #f6f6f6 39.09%, rgba(246, 246, 246, 0) 100%);
+}
+.bgClr2 {
+  background: linear-gradient(-90deg, #f6f6f6 79.09%, rgba(246, 246, 246, 0) 100%);
+}
+.whiteLine::after {
+  content: "";
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: white;
+  width: 15px;
+  position: absolute;
+}
+.curveVision::after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 120px;
+  left: 175px;
+  top: 54px;
+  border-top: 2px solid #1d1d1b;
+  border-radius: 90% 0 0 0;
+}
+
+.curveMission::after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 156px;
+  left: 175px;
+  top: 54px;
+  border-top: 2px solid #1d1d1b;
+  border-radius: 90% 0 0 0;
+}
+.imgShadow {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.94%, #000000 100%);
+}
+.readybtn {
+  background: rgba(80, 54, 150, 0.1);
+}
+.beforeimg::before {
+  content: "";
+  position: absolute;
+  background-image: url("../src/assests/images/beforeDots.png");
+  height: 150px;
+  background-repeat: no-repeat;
+  width: 150px;
+  left: 20%;
+}
+.afterimg::after {
+  content: "";
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  background-image: url("../src/assests/images/afterDots.png");
+  background-repeat: no-repeat;
+  left: 71%;
+}
+.slider-tran {
+  transition: 750ms all ease-in-out;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*  */
+.forminput {
+  background-color: #fbfbfb;
+  border: none;
+  border-radius: 10px;
+}
+
+/* mobile view */
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .curveVision::after {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 120px;
+    left: 113px;
+    top: 54px;
+    border-top: 2px solid #1d1d1b;
+    border-radius: 90% 0 0 0;
+  }
+  .curveMission::after {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 156px;
+    left: 113px;
+    top: 54px;
+    border-top: 2px solid #1d1d1b;
+    border-radius: 90% 0 0 0;
+  }
+  .beforeimg::before {
+    content: "";
+    background-image: url("../src/assests/images/mobBefore.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 12%;
+    height: 65px;
+    width: 80px;
+    margin-top: 18px;
+  }
+  .afterimg::after {
+    content: "";
+    position: absolute;
+    background-image: url("../src/assests/images/mobAfter.png");
+    background-repeat: no-repeat;
+    left: 71%;
+    height: 65px;
+    width: 80px;
+    margin-top: 18px;
+  }
+}

@@ -1,0 +1,54 @@
+<div className="lg:flex items-center justify-between bg-white sticky z-[99] top-0 w-full sm:h-[68px]">
+  <div
+    className="font-bold text-2xl cursor-pointer flex items-center sm:items-center font-[Poppins] 
+      text-gray-800 "
+  >
+    <Link to="/" className="lg:h-[57px] lg:w-[178px]">
+      {!open ? (
+        <img src={darkLogo} alt="darkLogo" className=" pl-[40px] " />
+      ) : (
+        <img alt="mobLogo" src={mobLogo} className="lg:hidden pl-[20px]" />
+      )}
+    </Link>
+  </div>
+
+  <div
+    onClick={() => setOpen(!open)}
+    className="sm:absolute sm:flex sm:right-[6px] sm:top-0 md:absolute md:block md:right-[20px] lg:hidden bg-palm px-[26px] h-[66px] items-center"
+  >
+    {open ? (
+      <FaTimes className="" />
+    ) : (
+      <div>
+        <div className="w-[24px] h-[2px] bg-white"></div>
+        <div className="w-[14px] h-[2px] mt-2 bg-white float-right"></div>
+      </div>
+    )}
+  </div>
+
+  <ul
+    className={`sm:bg-palm  sm:grid sm:gap-y-5 sm:py-[50px] lg:flex lg:items-center lg:pb-0 absolute lg:static bg-white lg:gap-x-[120px] lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 transition-all duration-500 ease-in ${
+      open ? "top-20 " : "top-[-500px]"
+    }`}
+  >
+    {Links.map((link) => (
+      <li
+        key={link.name}
+        className="text-[24px] leading-[30px] text-pantone1 font-Marcellus font-normal  sm:flex sm:justify-center sm:text-white"
+      >
+        <a
+          href={link.link}
+          className="text-gray-800 hover:text-gray-400 duration-500"
+        >
+          {link.name}
+        </a>
+      </li>
+    ))}
+  </ul>
+  <div className="sm:hidden bg-palm text-white items-center justify-center flex text-[28px] leading-[30px] font-Marcellus font-normal uppercase px-[35px] py-[20px]">
+    <Link to="/insights" className="">
+      Get <br />
+      Started
+    </Link>
+  </div>
+</div>
