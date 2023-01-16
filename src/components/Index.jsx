@@ -135,7 +135,7 @@ export default function Index() {
             <ButtonNext
               role="button"
               aria-label="slide forward"
-              className="text-[40px] mr-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
+              className="text-[40px] mr-8 focus:outline-none focus:bg-gray-400  focus:ring-offset-2 focus:ring-gray-400"
               id="next"
             >
               <SlArrowRight className="" />
@@ -537,7 +537,7 @@ export default function Index() {
             <ButtonNext
               role="button"
               aria-label="slide forward"
-              className="active:border-none text-[30px] focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
+              className="active:border-none text-[30px] focus:outline-none focus:bg-gray-400 focus:ring-offset-2 focus:ring-gray-400"
               id="next"
             >
               <SlArrowRight />

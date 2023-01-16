@@ -16,14 +16,18 @@ const Footer = () => {
           <div className="lg:w-[50%]">
             <div className="flex lg:flex-row sm:flex-col">
               <div className="lg:w-[50%] flex items-center">
-                <Link to="/">
+                <Link to="/" data-aos="zoom-in">
                   {" "}
                   <img src={darkLogo} alt="darkLogo" />
                 </Link>
               </div>
               <div className="lg:w-[50%] flex flex-row sm:mt-[52px] lg:mt-0">
                 <div>
-                  <h3 className="text-[24px] leading-[30px] text-pantone1 font-Marcellus font-normal">
+                  <h3
+                    data-aos="fade-up"
+                    data-delay="10s"
+                    className="text-[24px] leading-[30px] text-pantone1 font-Marcellus font-normal"
+                  >
                     Other links
                   </h3>
                   <div className="flex gap-[150px]">
@@ -65,7 +69,10 @@ const Footer = () => {
           <div className="lg:w-[50%]">
             <div className="flex lg:flex-row gap-[50px] sm:flex-col">
               <div className="lg:w-[50%]">
-                <h3 className="text-[24px] leading-[30px] text-pantone1 font-Marcellus font-normal">
+                <h3
+                  data-aos="fade-up"
+                  className="text-[24px] leading-[30px] text-pantone1 font-Marcellus font-normal"
+                >
                   Want to speak to us?
                 </h3>
                 <div>
@@ -92,7 +99,10 @@ const Footer = () => {
                 </div>
               </div>
               <div className="lg:w-[50%]">
-                <h3 className="text-[24px] leading-[30px] text-pantone1 font-Marcellus font-normal">
+                <h3
+                  data-aos="fade-up"
+                  className="text-[24px] leading-[30px] text-pantone1 font-Marcellus font-normal"
+                >
                   Want to see more?
                 </h3>
                 <div className="flex justify-between items-center gap-[12px] mt-[33px]">
