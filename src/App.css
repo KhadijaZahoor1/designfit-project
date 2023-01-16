@@ -60,6 +60,15 @@
 .readybtn {
   background: rgba(80, 54, 150, 0.1);
 }
+/* .readybtn:hover {
+  background-color: #503696;
+}
+.readybtn button:hover {
+  transition: 0.5s ease-in-out;
+  background-color: white;
+  color: #503696;
+  border: 2px solid #fbfbfb;
+} */
 .beforeimg::before {
   content: "";
   position: absolute;
@@ -89,6 +98,9 @@
   to {
     opacity: 1;
   }
+}
+.b-shade:hover {
+  box-shadow: 10px 10px 5px gray;
 }
 
 /*  */

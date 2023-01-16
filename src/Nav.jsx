@@ -55,7 +55,7 @@ const Nav = () => {
           {Links.map((link) => (
             <li
               key={link.name}
-              className="text-[24px] leading-[30px] p-[20px] text-pantone1 font-Marcellus font-normal  sm:flex sm:justify-center sm:text-white"
+              className="text-[24px] leading-[30px] p-[20px] hover:text-palm text-pantone1 font-Marcellus font-normal  sm:flex sm:justify-center sm:text-white"
             >
               <a
                 href={link.link}

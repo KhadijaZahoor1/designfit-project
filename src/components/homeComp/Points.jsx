@@ -2,6 +2,7 @@ import React from "react";
 import PalmBtn from "./PalmBtn";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const content = [
   {
@@ -60,7 +61,12 @@ const Points = () => {
             </li>
           </ul>
         </div>
-        <div className="lg:w-[60%] lg:px-[70px]">
+        <motion.div
+          className="lg:w-[60%] lg:px-[70px]"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
           <div className="flex items-center gap-5">
             <h3 className="text-[18px] leading-[23px] text-white opacity-[0.5] font-Mulish font-semibold">
               {content[points].title}
@@ -71,7 +77,7 @@ const Points = () => {
             {content[points].detail}
           </p>
           <PalmBtn btnText="See our services" />
-        </div>
+        </motion.div>
         <div className="lg:w-[20%] sm:hidden"></div>
       </div>
     </>

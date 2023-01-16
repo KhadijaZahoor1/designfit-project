@@ -28,8 +28,7 @@
 
   <ul
     className={`sm:bg-palm  sm:grid sm:gap-y-5 sm:py-[50px] lg:flex lg:items-center lg:pb-0 absolute lg:static bg-white lg:gap-x-[120px] lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 transition-all duration-500 ease-in ${
-      open ? "top-20 " : "top-[-500px]"
-    }`}
+      open ? "top-20 " : "top-[-500px]"}`}
   >
     {Links.map((link) => (
       <li
@@ -52,4 +51,3 @@
     </Link>
   </div>
 </div>
-<div></div>

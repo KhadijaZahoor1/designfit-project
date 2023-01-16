@@ -23,7 +23,7 @@ export default function Index() {
           className="lg:block hidden"
           naturalSlideWidth={100}
           isIntrinsicHeight={true}
-          totalSlides={12}
+          totalSlides={8}
           visibleSlides={4}
           step={1}
           infinite={true}
@@ -138,7 +138,7 @@ export default function Index() {
               className="text-[40px] mr-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
               id="next"
             >
-              <SlArrowRight />
+              <SlArrowRight className="" />
             </ButtonNext>
           </div>
         </CarouselProvider>
@@ -443,7 +443,7 @@ export default function Index() {
           className="block md:hidden "
           naturalSlideWidth={100}
           isIntrinsicHeight={true}
-          totalSlides={12}
+          totalSlides={8}
           visibleSlides={1}
           step={1}
           infinite={true}
@@ -537,7 +537,7 @@ export default function Index() {
             <ButtonNext
               role="button"
               aria-label="slide forward"
-              className="text-[30px] focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
+              className="active:border-none text-[30px] focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
               id="next"
             >
               <SlArrowRight />

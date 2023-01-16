@@ -49,9 +49,7 @@ export const HeroSection = ({
             <div className="mt-[40px]">
               <PalmBtn btnText={btnText} />
             </div>
-          ) : (
-            <div className="py-[40px]"></div>
-          )}
+          ) : null}
         </div>
       </div>
     </>

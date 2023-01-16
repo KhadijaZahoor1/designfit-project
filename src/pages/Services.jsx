@@ -6,6 +6,7 @@ import Nav from "../Nav";
 import DotSection from "../components/DotSection";
 import construction from "../assests/images/construction.png";
 import ConstTabs from "../components/ConstTabs";
+import { motion } from "framer-motion";
 
 const Data = {
   heading: ["Our", <br />, "Services"],
@@ -31,23 +32,32 @@ const text = ["Have a project ", <br className="lg:hidden" />, "in mind?"];
 const Services = () => {
   return (
     <>
-      <Nav />
-      {/* herosection */}
-      <HeroSection {...Data} btnText="" showBtn={false} />
-      {/* section 2 tabs */}
-      <div className="relative">
-        <span className="absolute left-0 top-0 w-full h-full boxShadow"></span>
-        <div className="lg:h-full sm:h-[700px]">
-          <img
-            alt="construction"
-            src={construction}
-            className="sm:h-full sm:object-cover lg:h-full"
-          />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        // initial={{ width: 0 }}
+        // animate={{ width: "100%" }}
+        // exit={{ x: window.innerWidth, transition: { duration: 0.01 } }}
+      >
+        <Nav />
+        {/* herosection */}
+        <HeroSection {...Data} btnText="" showBtn={false} />
+        {/* section 2 tabs */}
+        <div className="relative">
+          <span className="absolute left-0 top-0 w-full h-full boxShadow"></span>
+          <div className="lg:h-full sm:h-[700px]">
+            <img
+              alt="construction"
+              src={construction}
+              className="sm:h-full sm:object-cover lg:h-full"
+            />
+          </div>
+          <ConstTabs />
         </div>
-        <ConstTabs />
-      </div>
-      {/* last section */}
-      <DotSection text={text} showText={false} />
+        {/* last section */}
+        <DotSection text={text} showText={false} />
+      </motion.div>
     </>
   );
 };

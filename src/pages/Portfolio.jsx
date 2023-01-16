@@ -80,6 +80,7 @@ const Portfolio = () => {
       <HeroSection {...Data} btnText="" showBtn={false} />
       {/* section 2 img/headings */}
       <div className="lg:container lg:mx-auto lg:px-[125px] -mt-[100px]">
+        <div className="lg:mt-[40px]"></div>
         <div className="grid lg:grid-cols-2 lg:gap-[24px] sm:grid-cols-1 sm:gap-5 ">
           <ImgHeading imgHeading={imgHeading} />
         </div>

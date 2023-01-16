@@ -29,7 +29,9 @@ const Footer = () => {
                   <div className="flex gap-[150px]">
                     <ul className="text-[16px] leading-[18px] text-pantone1 font-Mulish font-normal mt-[33px]  gap-y-5 grid opacity-[0.6]">
                       <li>
-                        <Link to="/aboutus">About us</Link>
+                        <Link to="/aboutus" className="">
+                          About us
+                        </Link>
                       </li>
                       <li>
                         <Link to="/team">Team</Link>

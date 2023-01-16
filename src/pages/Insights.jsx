@@ -9,6 +9,7 @@ import RECEPTION from "../assests/images/RECEPTION.png";
 import ImgHeading from "../components/ImgHeading";
 import Nav from "../Nav";
 import DotSection from "../components/DotSection";
+import { motion } from "framer-motion";
 
 const Data = {
   heading: ["Articles"],
@@ -91,17 +92,24 @@ const text = ["Would you like to ", <br className="" />, "work with us?"];
 const Insights = () => {
   return (
     <>
-      <Nav />
-      {/* hero section */}
-      <HeroSection {...Data} showBtn={false} />
-      {/* section 2 img/content */}
-      <div className="lg:container lg:mx-auto lg:px-[125px] -mt-[100px]">
-        <div className="grid lg:grid-cols-2 lg:gap-[24px] sm:grid-cols-1 sm:gap-5 ">
-          <ImgHeading imgHeading={imgHeading} />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <Nav />
+        {/* hero section */}
+        <HeroSection {...Data} showBtn={false} />
+        {/* section 2 img/content */}
+        <div className="lg:container lg:mx-auto lg:px-[125px] -mt-[100px]">
+          <div className="lg:mt-[40px]"></div>
+          <div className="grid lg:grid-cols-2 lg:gap-[24px] sm:grid-cols-1 sm:gap-5 ">
+            <ImgHeading imgHeading={imgHeading} />
+          </div>
         </div>
-      </div>
-      {/* last section */}
-      <DotSection text={text} />
+        {/* last section */}
+        <DotSection text={text} />
+      </motion.div>
     </>
   );
 };
