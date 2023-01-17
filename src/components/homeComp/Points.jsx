@@ -2,7 +2,7 @@ import React from "react";
 import PalmBtn from "./PalmBtn";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+//import { AnimatePresence, motion } from "framer-motion";
 
 const content = [
   {
@@ -61,26 +61,25 @@ const Points = () => {
             </li>
           </ul>
         </div>
-        <AnimatePresence exitBeforeEnter>
-          <motion.div
-            className="lg:w-[60%] lg:px-[70px]"
-            initial={{ y: 10, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -10, opacity: 0 }}
-            transition={{ duration: 0.2 }}
-          >
-            <div className="flex items-center gap-5">
-              <h3 className="text-[18px] leading-[23px] text-white opacity-[0.5] font-Mulish font-semibold">
-                {content[points].title}
-              </h3>
-              <hr className="h-[1px] w-[150px] text-white opacity-[0.25]" />
-            </div>
-            <p className="lg:text-[50px] lg:leading-[60px] sm:text-[30px] sm:leading-[40px] text-white font-Marcellus font-normal pt-6 pb-10">
-              {content[points].detail}
-            </p>
-            <PalmBtn btnText="See our services" />
-          </motion.div>
-        </AnimatePresence>
+
+        <div
+          className="lg:w-[60%] lg:px-[70px]"
+          data-aos="flip-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <div className="flex items-center gap-5">
+            <h3 className="text-[18px] leading-[23px] text-white opacity-[0.5] font-Mulish font-semibold">
+              {content[points].title}
+            </h3>
+            <hr className="h-[1px] w-[150px] text-white opacity-[0.25]" />
+          </div>
+          <p className="lg:text-[50px] lg:leading-[60px] sm:text-[30px] sm:leading-[40px] text-white font-Marcellus font-normal pt-6 pb-10">
+            {content[points].detail}
+          </p>
+          <PalmBtn btnText="See our services" />
+        </div>
+
         <div className="lg:w-[20%] sm:hidden"></div>
       </div>
     </>

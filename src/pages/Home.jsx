@@ -28,8 +28,8 @@ const Home = () => {
         exit={{ opacity: 0 }}
       >
         {/* hero section */}
-        <div className="relative bg-mainBg h-[100vh] bg-no-repeat lg:bg-cover sm:bg-center">
-          <div className="absolute top-[10%] lg:left-[37%] sm:left-[18%]">
+        <div className="relative bg-mainBg h-[100vh] bg-no-repeat lg:bg-cover sm:bg-center overflow-hidden">
+          <div className="absolute top-[10%] lg:left-[37%] sm:left-[18%] overflow-hidden">
             <Link to="/">
               {" "}
               <img
@@ -53,7 +53,11 @@ const Home = () => {
         </div>
         {/*  */}
         <div className="lg:container lg:mx-auto py-10">
-          <p className="lg:text-[50px] lg:leading-[60px] sm:text-[30px] sm:leading-[40px] font-Marcellus font-normal text-pantone1 text-center">
+          <p
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            className="lg:text-[50px] lg:leading-[60px] sm:text-[30px] sm:leading-[40px] font-Marcellus font-normal text-pantone1 text-center"
+          >
             Here to provide you with a unique and exceptional experience
             thorughout the project journey.{" "}
           </p>
@@ -64,7 +68,11 @@ const Home = () => {
         </div>
         {/* section 4 quotation */}
         <div className="text-center lg:px-[80px] sm:px-[30px] lg:mt-0 sm:mt-[50px]">
-          <p className="lg:text-[50px] lg:leading-[60px] sm:text-[20px] sm:leading-[30px] text-pantone1 font-Marcellus font-normal lg:py-[50px] sm:py-[25px]">
+          <p
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            className="lg:text-[50px] lg:leading-[60px] sm:text-[20px] sm:leading-[30px] text-pantone1 font-Marcellus font-normal lg:py-[50px] sm:py-[25px]"
+          >
             "We're committed to you and your business. Our mission is to take
             you on a journey of project delivery, showcasing our connection with
             your culture, vision, and brand."
@@ -99,11 +107,14 @@ const Home = () => {
           </div>
           {/* point 2 */}
           <div className="lg:pr-[250px] lg:pl-[80px] sm:pr-5 flex lg:flex-row-reverse sm:flex-col">
-            <div className="lg:w-[40%]">
+            <div className="lg:w-[40%]" data-aos="fade-right">
               <img src={nandos} alt="" />
             </div>
             <div className="lg:w-[60%] flex bgClr2">
-              <div className="self-center lg:px-[100px] sm:px-5 sm:py-[40px]">
+              <div
+                className="self-center lg:px-[100px] sm:px-5 sm:py-[40px]"
+                data-aos="fade-left"
+              >
                 <h2 className="text-pantone1 text-[50px] leading-[60px] font-Marcellus font-normal">
                   Nando's
                 </h2>
@@ -118,11 +129,14 @@ const Home = () => {
           </div>
           {/* point 3 */}
           <div className="lg:pl-[160px] lg:pr-[80px] sm:pl-5 flex sm:flex-col">
-            <div className="lg:w-[40%]">
+            <div className="lg:w-[40%]" data-aos="fade-right">
               <img src={crc} alt="" />
             </div>
             <div className="lg:w-[60%] flex bgClr">
-              <div className="self-center lg:px-[100px] sm:px-5 sm:py-[40px]">
+              <div
+                className="self-center lg:px-[100px] sm:px-5 sm:py-[40px]"
+                data-aos="fade-left"
+              >
                 <h2 className="text-pantone1 text-[50px] leading-[60px] font-Marcellus font-normal">
                   CRC
                 </h2>
@@ -149,15 +163,20 @@ const Home = () => {
             <div className="py-[50px] lg:container lg:mx-auto flex justify-center gap-5 items-center sm:flex-col">
               <div className="flex gap-5 sm:flex-col sm:px-[50px] ">
                 <input
+                  data-aos="fade-left"
                   placeholder="Full Name"
                   className="bg-[#282826] cursor-pointer text-[14px] leading-[16px] placeholder:text-white placeholder:opacity-[0.5] font-Mulish font-normal lg:py-[15px] lg:pl-[20px] lg:pr-[150px] sm:py-[15px] sm:pl-[30px] sm:pr-[100px] focus:outline-none"
                 />
                 <input
+                  data-aos="fade-left"
+                  data-aos-delay="100"
                   placeholder="Email Address"
                   className="bg-[#282826] cursor-pointer text-[14px] leading-[16px] placeholder:text-white placeholder:opacity-[0.5] font-Mulish font-normal lg:py-[15px] lg:pl-[20px] lg:pr-[150px] sm:py-[15px] sm:pl-[30px] sm:pr-[100px] focus:outline-none"
                 />
               </div>
-              <PalmBtn btnText={btnText} />
+              <div data-aos="fade-left" data-aos-delay="150">
+                <PalmBtn btnText={btnText} />
+              </div>
             </div>
           </div>
         </div>

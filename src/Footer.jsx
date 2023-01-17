@@ -7,6 +7,7 @@ import Location from "../src/assests/images/Location.svg";
 import Facebook from "../src/assests/images/Facebook.svg";
 import Instagram from "../src/assests/images/Instagram.svg";
 import Linkedin from "../src/assests/images/Linkedin.svg";
+//import WhiteBtn from "../src/components/homeComp/WhiteBtn";
 
 const Footer = () => {
   return (
@@ -133,6 +134,7 @@ const Footer = () => {
                     placeholder="Get news & updates!"
                     className="text-[16px] leading-[18px] placeholder:text-pantone1 font-Marcellus font-normal bg-gray px-[12px] py-[21px]"
                   />
+                  {/* <WhiteBtn /> */}
                   <div className="flex items-center bg-vector bg-right-bottom bg-no-repeat sm:grid">
                     <button className="uppercase bg-white text-palm text-[18px] leading-[23px] font-Marcellus font-light border-[2px] border-gray px-[15px] py-[20px] rounded-br-[40px]">
                       Subscribe

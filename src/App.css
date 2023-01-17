@@ -109,9 +109,6 @@
   border: none;
   border-radius: 10px;
 }
-.bglg:hover {
-  background: linear-gradient(360deg, #1d1d1b 0%, rgba(29, 29, 27, 0) 100%);
-}
 
 /* mobile view */
 
