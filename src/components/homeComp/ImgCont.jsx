@@ -37,7 +37,7 @@ export const ImgCont = () => {
               alt=""
               className="lg:min-h-[100%] sm:h-[420px] sm:w-full"
             />
-            <div className="absolute bottom-[30px] lg:px-[80px] sm:px-[30px]">
+            <div className="absolute bottom-[30px] lg:px-[80px] sm:px-[30px] hover:top-[25%] hover:bottom-0 bglg">
               <h3 className="lg:text-[60px] lg:leading-[70px] sm:text-[32px] sm:leading-[40px] font-Marcellus font-normal text-white">
                 {title}
               </h3>

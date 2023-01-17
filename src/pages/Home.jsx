@@ -64,10 +64,7 @@ const Home = () => {
         </div>
         {/* section 4 quotation */}
         <div className="text-center lg:px-[80px] sm:px-[30px] lg:mt-0 sm:mt-[50px]">
-          <p
-            data-aos="zoom-in"
-            className="lg:text-[50px] lg:leading-[60px] sm:text-[20px] sm:leading-[30px] text-pantone1 font-Marcellus font-normal lg:py-[50px] sm:py-[25px]"
-          >
+          <p className="lg:text-[50px] lg:leading-[60px] sm:text-[20px] sm:leading-[30px] text-pantone1 font-Marcellus font-normal lg:py-[50px] sm:py-[25px]">
             "We're committed to you and your business. Our mission is to take
             you on a journey of project delivery, showcasing our connection with
             your culture, vision, and brand."
@@ -80,11 +77,14 @@ const Home = () => {
         <div className="pt-[100px] lg:gap-5 grid">
           {/* point 1 */}
           <div className="lg:pl-[160px] lg:pr-[80px] sm:pl-5 flex sm:flex-col">
-            <div className="lg:w-[40%]">
+            <div className="lg:w-[40%]" data-aos="fade-right">
               <img src={hala} alt="" />
             </div>
             <div className="lg:w-[60%] flex bgClr">
-              <div className="self-center lg:px-[100px] sm:px-5 sm:py-[40px]">
+              <div
+                className="self-center lg:px-[100px] sm:px-5 sm:py-[40px]"
+                data-aos="fade-left"
+              >
                 <h2 className="text-pantone1 text-[50px] leading-[60px] font-Marcellus font-normal">
                   Hala Insurance
                 </h2>
