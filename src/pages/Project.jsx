@@ -35,7 +35,7 @@ const Project = () => {
         <HeroMain {...Data} />
         {/* section contact form */}
         <div className="lg:container lg:mx-auto lg:px-[100px] lg:py-[100px] grid lg:gap-10 sm:gap-7 sm:px-[25px] sm:pt-[50px]">
-          <div>
+          <div data-aos="zoom-in">
             <div className="flex gap-5 sm:flex-col">
               <div class="relative lg:w-[50%]">
                 <input
@@ -106,21 +106,32 @@ const Project = () => {
               Services
             </h3>
             <div className="flex items-center gap-5 mt-5 sm:flex-col">
-              <label className="bg-white rounded-[15px] shadow-[_10px_10px_20px_rgba(29,29,27,0.03)] py-5 px-4 text-[14px] leading-[16px] text-pantone1 font-Mulish font-bold flex justify-between lg:w-[40%] sm:w-full">
+              <label
+                data-aos="fade-right"
+                className="bg-white rounded-[15px] shadow-[_10px_10px_20px_rgba(29,29,27,0.03)] py-5 px-4 text-[14px] leading-[16px] text-pantone1 font-Mulish font-bold flex justify-between lg:w-[40%] sm:w-full"
+              >
                 Consulting
                 <input
                   type="checkbox"
                   className="rounded-[5px] bg-[#f6f6f6] border-none focus:bg-palm focus:outline-none focus:border-none"
                 />
               </label>
-              <label className="bg-white rounded-[15px] shadow-[_10px_10px_20px_rgba(29,29,27,0.03)] py-5 px-4 text-[14px] leading-[16px] text-pantone1 font-Mulish font-bold flex justify-between lg:w-[40%] sm:w-full">
+              <label
+                data-aos="fade-right"
+                data-aos-delay="100"
+                className="bg-white rounded-[15px] shadow-[_10px_10px_20px_rgba(29,29,27,0.03)] py-5 px-4 text-[14px] leading-[16px] text-pantone1 font-Mulish font-bold flex justify-between lg:w-[40%] sm:w-full"
+              >
                 Design
                 <input
                   type="checkbox"
                   className="rounded-[5px] bg-[#f6f6f6] border-none focus:bg-palm focus:outline-none focus:border-none"
                 />
               </label>
-              <label className="bg-white rounded-[15px] shadow-[_10px_10px_20px_rgba(29,29,27,0.03)] py-5 px-4 text-[14px] leading-[16px] text-pantone1 font-Mulish font-bold flex justify-between lg:w-[40%] sm:w-full">
+              <label
+                data-aos="fade-right"
+                data-aos-delay="130"
+                className="bg-white rounded-[15px] shadow-[_10px_10px_20px_rgba(29,29,27,0.03)] py-5 px-4 text-[14px] leading-[16px] text-pantone1 font-Mulish font-bold flex justify-between lg:w-[40%] sm:w-full"
+              >
                 Construction
                 <input
                   type="checkbox"
@@ -134,21 +145,32 @@ const Project = () => {
               Sectors
             </h3>
             <div className="flex items-center gap-5 mt-5 sm:flex-col">
-              <label className="bg-white rounded-[15px] shadow-[_10px_10px_20px_rgba(29,29,27,0.03)] py-5 px-4 text-[14px] leading-[16px] text-pantone1 font-Mulish font-bold flex justify-between lg:w-[40%] sm:w-full">
+              <label
+                data-aos="fade-right"
+                className="bg-white rounded-[15px] shadow-[_10px_10px_20px_rgba(29,29,27,0.03)] py-5 px-4 text-[14px] leading-[16px] text-pantone1 font-Mulish font-bold flex justify-between lg:w-[40%] sm:w-full"
+              >
                 F&B
                 <input
                   type="checkbox"
                   className="rounded-[5px] bg-[#f6f6f6] border-none focus:bg-palm focus:outline-none focus:border-none"
                 />
               </label>
-              <label className="bg-white rounded-[15px] shadow-[_10px_10px_20px_rgba(29,29,27,0.03)] py-5 px-4 text-[14px] leading-[16px] text-pantone1 font-Mulish font-bold flex justify-between lg:w-[40%] sm:w-full">
+              <label
+                data-aos="fade-right"
+                data-aos-delay="100"
+                className="bg-white rounded-[15px] shadow-[_10px_10px_20px_rgba(29,29,27,0.03)] py-5 px-4 text-[14px] leading-[16px] text-pantone1 font-Mulish font-bold flex justify-between lg:w-[40%] sm:w-full"
+              >
                 Office
                 <input
                   type="checkbox"
                   className="rounded-[5px] bg-[#f6f6f6] border-none focus:bg-palm focus:outline-none focus:border-none"
                 />
               </label>
-              <label className="bg-white rounded-[15px] shadow-[_10px_10px_20px_rgba(29,29,27,0.03)] py-5 px-4 text-[14px] leading-[16px] text-pantone1 font-Mulish font-bold flex justify-between lg:w-[40%] sm:w-full">
+              <label
+                data-aos="fade-right"
+                data-aos-delay="130"
+                className="bg-white rounded-[15px] shadow-[_10px_10px_20px_rgba(29,29,27,0.03)] py-5 px-4 text-[14px] leading-[16px] text-pantone1 font-Mulish font-bold flex justify-between lg:w-[40%] sm:w-full"
+              >
                 Retail
                 <input
                   type="checkbox"

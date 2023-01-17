@@ -82,7 +82,12 @@ const ConstTabs = () => {
             </li>
           </ul>
         </div>
-        <div className="lg:w-[70%] grid place-content-center animate-[fade_1s] slider-tran sm:px-5">
+        <div
+          className="lg:w-[70%] grid place-content-center animate-[fade_1s] slider-tran sm:px-5"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
           <h1 className="text-[50px] leading-[60px] font-Marcellus font-normal text-white lg:text-center sm:text-left">
             {tabsData[tabIndex].heading}
           </h1>

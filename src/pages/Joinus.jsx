@@ -35,7 +35,7 @@ const Joinus = () => {
         <HeroMain {...Data} />
         {/* section form */}
         <div className="lg:container lg:mx-auto lg:px-[100px] lg:pt-[100px] lg:pb-[50px] grid lg:gap-10 sm:gap-7 sm:px-[25px] sm:pt-[50px]">
-          <div>
+          <div data-aos="zoom-in">
             <div className="flex gap-5 sm:flex-col">
               <div class="relative lg:w-[50%]">
                 <input
@@ -96,7 +96,7 @@ const Joinus = () => {
               <textarea
                 type="textarea"
                 placeholder="Portfolio link"
-                className="bg-[#fbfbfb] border-none rounded-[10px] w-full h-[100px] text-[14px] leading-[16px] font-Mulish font-normal text-pantone1"
+                className="bg-[#fbfbfb] border-none rounded-[10px] w-full h-[130px] text-[14px] leading-[16px] font-Mulish font-normal text-pantone1"
               />
             </div>
           </div>

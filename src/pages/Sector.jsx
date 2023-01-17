@@ -42,7 +42,11 @@ const Sector = () => {
         <HeroSection {...Data} showBtn={false} />
         {/* section 2 ofcice */}
         <div className="container mx-auto flex lg:px-[50px] pt-[80px] sm:flex-col sm:gap-[50px]">
-          <div className="lg:w-[50%] relative ">
+          <div
+            className="lg:w-[50%] relative "
+            data-aos="zoom-in-right"
+            data-delay="200"
+          >
             <div className="whiteLine"></div>
             <img
               alt="office"
@@ -68,7 +72,11 @@ const Sector = () => {
         </div>
         {/* retail & hospitality */}
         <div className="container mx-auto flex lg:flex-row-reverse lg:px-[50px] sm:flex-col sm:gap-[50px] sm:mt-[50px]">
-          <div className="lg:w-[50%] relative">
+          <div
+            className="lg:w-[50%] relative"
+            data-aos="zoom-in-left"
+            data-delay="300"
+          >
             <div className="whiteLine"></div>
             <img
               alt="retail"
@@ -94,7 +102,11 @@ const Sector = () => {
         </div>
         {/* F & B */}
         <div className="container mx-auto flex lg:px-[50px] py-[80px] sm:flex-col sm:gap-[50px]">
-          <div className="lg:w-[50%] relative ">
+          <div
+            className="lg:w-[50%] relative "
+            data-aos="zoom-in-right"
+            data-delay="400"
+          >
             <div className="whiteLine"></div>
             <img
               alt="Fb"

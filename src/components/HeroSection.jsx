@@ -16,7 +16,10 @@ export const HeroSection = ({
     <>
       <div className="flex sm:flex-col bg-white h-[630px]">
         <div className="lg:w-[40%]">
-          <div className="lg:pt-[150px] lg:pl-[250px] sm:py-[60px] sm:px-[50px]">
+          <div
+            className="lg:pt-[150px] lg:pl-[250px] sm:py-[60px] sm:px-[50px]"
+            data-aos="fade-right"
+          >
             <h1 className="text-[50px] leading-[60px] text-pantone1 font-Marcellus font-normal">
               {heading}
             </h1>
@@ -25,7 +28,7 @@ export const HeroSection = ({
             </p>
           </div>
         </div>
-        <div className="lg:w-[60%] relative">
+        <div className="lg:w-[60%] relative" data-aos="fade-left">
           <span className="absolute -left-[18px] top-[22px] w-full h-full bg-white opacity-[0.03] rounded-bl-[180px]"></span>
           <img
             alt="trendy"
@@ -36,13 +39,21 @@ export const HeroSection = ({
       </div>
       <div className="bg-black lg:pt-[50px] sm:pt-[150px] pb-[100px] lg:px-[200px] sm:px-[50px]  lg:-mt-[150px] sm:-mt-[150px]">
         <div className="container mx-auto lg:px-[50px] sm:px-0">
-          <Link to="/project">
+          <Link to="/project" data-aos="fade-up">
             <img src={icon} alt="icon" className="sm:hidden" />
           </Link>
-          <h3 className="lg:text-[33px] lg:leading-[38px] sm:text-[20px] sm:leading-[26px] text-white font-Mulish font-bold mt-[50px]">
+          <h3
+            data-aos="fade-up"
+            data-duration="1000"
+            className="lg:text-[33px] lg:leading-[38px] sm:text-[20px] sm:leading-[26px] text-white font-Mulish font-bold mt-[50px]"
+          >
             {title}
           </h3>
-          <p className="text-[14px] leading-[24px] font-Mulish font-normal text-white opacity-[0.5] mt-[20px]">
+          <p
+            data-aos="fade-up"
+            data-duration="1000"
+            className="text-[14px] leading-[24px] font-Mulish font-normal text-white opacity-[0.5] mt-[20px]"
+          >
             {detail}
           </p>
           {showBtn ? (

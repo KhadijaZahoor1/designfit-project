@@ -39,7 +39,7 @@ const TeamMembers = () => {
       {members.map((item) => {
         const { img, name, position } = item;
         return (
-          <div className="">
+          <div className="" data-aos="zoom-out" data-aos-duration="1000">
             <img
               alt="team members"
               src={img}

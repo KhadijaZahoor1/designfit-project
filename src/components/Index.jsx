@@ -57,7 +57,7 @@ export default function Index() {
                   id="slider"
                   className="h-full flex lg:gap-10 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700"
                 >
-                  <Slide index={0}>
+                  <Slide index={0} data-aos="fade-left">
                     <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                       <img
                         src={crc}
@@ -66,7 +66,7 @@ export default function Index() {
                       />
                     </div>
                   </Slide>
-                  <Slide index={1}>
+                  <Slide index={1} data-aos="fade-left" data-aos-delay="100">
                     <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                       <img
                         src={Jumehra}
@@ -75,7 +75,7 @@ export default function Index() {
                       />
                     </div>
                   </Slide>
-                  <Slide index={2}>
+                  <Slide index={2} data-aos="fade-left" data-aos-delay="130">
                     <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                       <img
                         src={Halaimg}
@@ -84,7 +84,7 @@ export default function Index() {
                       />
                     </div>
                   </Slide>
-                  <Slide index={3}>
+                  <Slide index={3} data-aos="fade-left" data-aos-delay="150">
                     <div className="flex flex-shrink-0 relative w-full sm:w-auto">
                       <img
                         src={Nandos}

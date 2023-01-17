@@ -41,7 +41,7 @@ const Aboutus = () => {
         <HeroSection {...Data} btnText="Join Our Team" />
         {/* section 2 vision */}
         <div className="container mx-auto flex lg:px-[50px] pt-[80px] sm:flex-col sm:gap-[50px]">
-          <div className="lg:w-[50%] relative ">
+          <div className="lg:w-[50%] relative " data-aos="zoom-in-right">
             <div className="whiteLine"></div>
             <img
               alt="vision"
@@ -63,7 +63,7 @@ const Aboutus = () => {
         </div>
         {/* section mission */}
         <div className="container mx-auto flex lg:flex-row-reverse lg:px-[50px] sm:flex-col sm:gap-[50px] sm:mt-[50px]">
-          <div className="lg:w-[50%] relative">
+          <div className="lg:w-[50%] relative" data-aos="zoom-in-left">
             <div className="whiteLine"></div>
             <img
               alt="mission"
@@ -108,7 +108,10 @@ const Aboutus = () => {
               src={mask}
               className="mx-auto border-[6px] border-white rounded-[50%] w-[80px] h-[80px]"
             />
-            <p className="font-Mulish font-normal text-[18px] leading-[30px] text-pantone1 mt-[30px] lg:px-[80px] sm:px-[20px] text-center">
+            <p
+              data-aos="zoom-in"
+              className="font-Mulish font-normal text-[18px] leading-[30px] text-pantone1 mt-[30px] lg:px-[80px] sm:px-[20px] text-center"
+            >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -136,10 +139,17 @@ const Aboutus = () => {
         {/* section find city in dubai */}
         <div className="flex lg:gap-[30px] sm:flex-col sm:gap-5">
           <div className="lg:w-[50%] pl-[20px]">
-            <h1 className="lg:text-[56px] lg:leading-[65px] sm:text-[40px] sm:leading-[50px] text-pantone1 font-Marcellus font-normal lg:pl-[100px]">
+            <h1
+              data-aos="fade-right"
+              className="lg:text-[56px] lg:leading-[65px] sm:text-[40px] sm:leading-[50px] text-pantone1 font-Marcellus font-normal lg:pl-[100px]"
+            >
               You can find us <br /> in Motor City <br /> in Dubai
             </h1>
-            <div className="sm:flex sm:gap-5  sm:mt-[10px] lg:mt-[82px]">
+            <div
+              className="sm:flex sm:gap-5  sm:mt-[10px] lg:mt-[82px]"
+              data-aos="fade-right"
+              data-aos-delay="500"
+            >
               <div className="sm:w-[60%]">
                 <img src={Mask1} alt="mask1" className="mt-[50px] " />
               </div>
@@ -149,10 +159,17 @@ const Aboutus = () => {
             </div>
           </div>
           <div className="lg:w-[50%] flex lg:gap-[40px]">
-            <div className="lg:w-[70%] lg:min-h-[470px] sm:px-5">
+            <div
+              className="lg:w-[70%] lg:min-h-[470px] sm:px-5"
+              data-aos="fade-up"
+            >
               <img src={Map} alt="map" className="h-full w-full" />
             </div>
-            <div className="lg:w-[30%] flex self-end">
+            <div
+              className="lg:w-[30%] flex self-end"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
               <img
                 src={Mask2}
                 alt="mask2"

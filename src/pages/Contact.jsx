@@ -34,7 +34,7 @@ const Contact = () => {
         <HeroMain {...Data} />
         {/* section 2 form */}
         <div className="lg:container lg:mx-auto lg:px-[100px] lg:pt-[100px] lg:pb-[50px] grid lg:gap-10 sm:gap-7 sm:px-[25px] sm:pt-[50px]">
-          <div>
+          <div data-aos="zoom-in">
             <div className="flex gap-5 sm:flex-col">
               <div class="relative lg:w-[50%]">
                 <input

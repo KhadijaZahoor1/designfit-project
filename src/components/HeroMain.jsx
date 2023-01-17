@@ -18,7 +18,10 @@ const HeroMain = ({
     <>
       <div className="flex sm:flex-col bg-white h-[630px]">
         <div className="lg:w-[40%]">
-          <div className="lg:pt-[150px] lg:pl-[250px] sm:py-[60px] sm:px-[50px]">
+          <div
+            className="lg:pt-[150px] lg:pl-[250px] sm:py-[60px] sm:px-[50px]"
+            data-aos="fade-right"
+          >
             <Link to="/contact">
               {" "}
               <h1 className="text-[50px] leading-[60px] text-pantone1 font-Marcellus font-normal">
@@ -30,7 +33,7 @@ const HeroMain = ({
             </p>
           </div>
         </div>
-        <div className="lg:w-[60%] relative">
+        <div className="lg:w-[60%] relative" data-aos="fade-left">
           <span className="absolute -left-[18px] top-[22px] w-full h-full bg-white opacity-[0.03] rounded-bl-[180px]"></span>
           <img
             alt="trendy"
@@ -44,7 +47,7 @@ const HeroMain = ({
           <img src={icon} alt="icon" className="sm:hidden" />
         </div>
         <div className="grid lg:grid-cols-4 sm:grid-cols-1 mt-[50px] sm:px-[25px] sm:gap-[40px]">
-          <div className="grid lg:place-content-center">
+          <div className="grid lg:place-content-center" data-aos="fade-left">
             <Link to="/joinus">
               {" "}
               <h3 className="text-[14px] leading-[16px] font-Mulish font-semibold text-white opacity-[0.5]">
@@ -55,7 +58,11 @@ const HeroMain = ({
               {detail1}
             </p>
           </div>
-          <div className="grid lg:place-content-center">
+          <div
+            className="grid lg:place-content-center"
+            data-aos="fade-left"
+            data-aos-delay="100"
+          >
             <h3 className="text-[14px] leading-[16px] font-Mulish font-semibold text-white opacity-[0.5]">
               {socialCont2}
             </h3>
@@ -63,7 +70,11 @@ const HeroMain = ({
               {detail2}
             </p>
           </div>
-          <div className="grid lg:place-content-center">
+          <div
+            className="grid lg:place-content-center"
+            data-aos="fade-left"
+            data-aos-delay="130"
+          >
             <h3 className="text-[14px] leading-[16px] font-Mulish font-semibold text-white opacity-[0.5]">
               {socialCont3}
             </h3>
@@ -71,7 +82,7 @@ const HeroMain = ({
               {detail3}
             </p>
           </div>
-          <div className="lg:pr-5">
+          <div className="lg:pr-5" data-aos="fade-left" data-aos-delay="150">
             <img alt="map" src={map} />
           </div>
         </div>

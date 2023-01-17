@@ -30,7 +30,11 @@ const Footer = () => {
                   >
                     Other links
                   </h3>
-                  <div className="flex gap-[150px]">
+                  <div
+                    className="flex gap-[150px]"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  >
                     <ul className="text-[16px] leading-[18px] text-pantone1 font-Mulish font-normal mt-[33px]  gap-y-5 grid opacity-[0.6]">
                       <li>
                         <Link to="/aboutus" className="">
@@ -75,7 +79,7 @@ const Footer = () => {
                 >
                   Want to speak to us?
                 </h3>
-                <div>
+                <div data-aos="fade-up" data-aos-duration="1000">
                   <ul className="text-[16px] leading-[18px] text-pantone1 font-Mulish font-normal mt-[33px] gap-y-5 grid opacity-[0.6]">
                     <li>
                       <Link className="flex gap-2">
@@ -105,7 +109,11 @@ const Footer = () => {
                 >
                   Want to see more?
                 </h3>
-                <div className="flex justify-between items-center gap-[12px] mt-[33px]">
+                <div
+                  className="flex justify-between items-center gap-[12px] mt-[33px]"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   <div className="bg-gray h-[60px] w-[110px] flex items-center justify-center">
                     <img src={Facebook} alt="fb" className="" />
                   </div>
@@ -116,7 +124,11 @@ const Footer = () => {
                     <img src={Linkedin} alt="linkin" className="mx-auto" />
                   </div>
                 </div>
-                <div className="lg:mt-[13px] sm:mt-[30px] flex lg:flex-row sm:flex-col sm:gap-[10px]">
+                <div
+                  className="lg:mt-[13px] sm:mt-[30px] flex lg:flex-row sm:flex-col sm:gap-[10px]"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   <input
                     placeholder="Get news & updates!"
                     className="text-[16px] leading-[18px] placeholder:text-pantone1 font-Marcellus font-normal bg-gray px-[12px] py-[21px]"

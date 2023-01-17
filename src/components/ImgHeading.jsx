@@ -6,7 +6,7 @@ const ImgHeading = (props) => {
       {props.imgHeading.map((item, index) => {
         const { img, title, text } = item;
         return (
-          <div className="relative" key={index}>
+          <div className="relative" key={index} data-aos="fade-right">
             <span className="absolute left-0 top-0 w-full h-full imgShadow"></span>
             <img src={img} alt="img" />
             <div className="absolute bottom-[20px] left-[30px]">

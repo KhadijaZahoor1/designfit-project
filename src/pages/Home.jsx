@@ -66,8 +66,6 @@ const Home = () => {
         <div className="text-center lg:px-[80px] sm:px-[30px] lg:mt-0 sm:mt-[50px]">
           <p
             data-aos="zoom-in"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
             className="lg:text-[50px] lg:leading-[60px] sm:text-[20px] sm:leading-[30px] text-pantone1 font-Marcellus font-normal lg:py-[50px] sm:py-[25px]"
           >
             "We're committed to you and your business. Our mission is to take
@@ -82,14 +80,11 @@ const Home = () => {
         <div className="pt-[100px] lg:gap-5 grid">
           {/* point 1 */}
           <div className="lg:pl-[160px] lg:pr-[80px] sm:pl-5 flex sm:flex-col">
-            <div data-aos="fade-right" className="lg:w-[40%]">
+            <div className="lg:w-[40%]">
               <img src={hala} alt="" />
             </div>
             <div className="lg:w-[60%] flex bgClr">
-              <div
-                className="self-center lg:px-[100px] sm:px-5 sm:py-[40px]"
-                data-aos="fade-left"
-              >
+              <div className="self-center lg:px-[100px] sm:px-5 sm:py-[40px]">
                 <h2 className="text-pantone1 text-[50px] leading-[60px] font-Marcellus font-normal">
                   Hala Insurance
                 </h2>
@@ -104,14 +99,11 @@ const Home = () => {
           </div>
           {/* point 2 */}
           <div className="lg:pr-[250px] lg:pl-[80px] sm:pr-5 flex lg:flex-row-reverse sm:flex-col">
-            <div className="lg:w-[40%]" data-aos="fade-left">
+            <div className="lg:w-[40%]">
               <img src={nandos} alt="" />
             </div>
             <div className="lg:w-[60%] flex bgClr2">
-              <div
-                className="self-center lg:px-[100px] sm:px-5 sm:py-[40px]"
-                data-aos="fade-right"
-              >
+              <div className="self-center lg:px-[100px] sm:px-5 sm:py-[40px]">
                 <h2 className="text-pantone1 text-[50px] leading-[60px] font-Marcellus font-normal">
                   Nando's
                 </h2>
@@ -126,14 +118,11 @@ const Home = () => {
           </div>
           {/* point 3 */}
           <div className="lg:pl-[160px] lg:pr-[80px] sm:pl-5 flex sm:flex-col">
-            <div className="lg:w-[40%]" data-aos="fade-right">
+            <div className="lg:w-[40%]">
               <img src={crc} alt="" />
             </div>
             <div className="lg:w-[60%] flex bgClr">
-              <div
-                className="self-center lg:px-[100px] sm:px-5 sm:py-[40px]"
-                data-aos="fade-left"
-              >
+              <div className="self-center lg:px-[100px] sm:px-5 sm:py-[40px]">
                 <h2 className="text-pantone1 text-[50px] leading-[60px] font-Marcellus font-normal">
                   CRC
                 </h2>
