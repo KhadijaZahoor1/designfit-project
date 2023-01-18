@@ -31,12 +31,13 @@ const Data = {
 const Aboutus = () => {
   return (
     <>
+      <Nav />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
+        className="overflow-hidden w-full"
       >
-        <Nav />
         {/* hero section */}
         <HeroSection {...Data} btnText="Join Our Team" />
         {/* section 2 vision */}

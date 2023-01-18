@@ -32,15 +32,16 @@ const text = ["Have a project ", <br className="lg:hidden" />, "in mind?"];
 const Services = () => {
   return (
     <>
+      <Nav />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
+        className="overflow-hidden w-full"
         // initial={{ width: 0 }}
         // animate={{ width: "100%" }}
         // exit={{ x: window.innerWidth, transition: { duration: 0.01 } }}
       >
-        <Nav />
         {/* herosection */}
         <HeroSection {...Data} btnText="" showBtn={false} />
         {/* section 2 tabs */}

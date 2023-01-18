@@ -11,6 +11,7 @@ import Group87 from "../assests/images/Group87.png";
 import Group88 from "../assests/images/Group88.png";
 import ImgHeading from "../components/ImgHeading";
 import DotSection from "../components/DotSection";
+import { motion } from "framer-motion";
 
 const Data = {
   heading: ["Our", <br />, "Portfolio"],
@@ -76,17 +77,24 @@ const Portfolio = () => {
   return (
     <>
       <Nav />
-      {/* hero section */}
-      <HeroSection {...Data} btnText="" showBtn={false} />
-      {/* section 2 img/headings */}
-      <div className="lg:container lg:mx-auto lg:px-[125px] -mt-[100px]">
-        <div className="lg:mt-[40px]"></div>
-        <div className="grid lg:grid-cols-2 lg:gap-[24px] sm:grid-cols-1 sm:gap-5 ">
-          <ImgHeading imgHeading={imgHeading} />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="overflow-hidden w-full"
+      >
+        {/* hero section */}
+        <HeroSection {...Data} btnText="" showBtn={false} />
+        {/* section 2 img/headings */}
+        <div className="lg:container lg:mx-auto lg:px-[125px] -mt-[100px]">
+          <div className="lg:mt-[40px]"></div>
+          <div className="grid lg:grid-cols-2 lg:gap-[24px] sm:grid-cols-1 sm:gap-5 ">
+            <ImgHeading imgHeading={imgHeading} />
+          </div>
         </div>
-      </div>
-      {/* section 3 */}
-      <DotSection text={text} />
+        {/* section 3 */}
+        <DotSection text={text} />
+      </motion.div>
     </>
   );
 };

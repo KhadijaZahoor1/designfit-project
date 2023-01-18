@@ -38,7 +38,7 @@ export const ImgCont = () => {
               className="lg:min-h-[100%] sm:h-[420px] sm:w-full"
             />
             <div
-              className="absolute bottom-[30px] lg:px-[80px] sm:px-[30px]"
+              className="absolute bottom-[30px] lg:px-[80px] sm:px-[30px] hover:top-[25%] hover:bottom-0 bglg"
               data-aos="zoom-out"
               data-aos-duration="1000"
             >

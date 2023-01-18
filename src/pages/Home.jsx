@@ -26,6 +26,7 @@ const Home = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
+        className="overflow-hidden w-full"
       >
         {/* hero section */}
         <div className="relative bg-mainBg h-[100vh] bg-no-repeat lg:bg-cover sm:bg-center overflow-hidden">
@@ -36,10 +37,12 @@ const Home = () => {
                 src={whiteLogo}
                 alt=""
                 className="sm:w-[250px] lg:w-[315px]"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
               />
             </Link>
           </div>
-          <div className="absolute bottom-0 w-full">
+          <div className="absolute bottom-0 w-full ">
             <Nav />
           </div>
           {/* <Navbar /> */}

@@ -92,12 +92,13 @@ const text = ["Would you like to ", <br className="" />, "work with us?"];
 const Insights = () => {
   return (
     <>
+      <Nav />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
+        className="overflow-hidden w-full"
       >
-        <Nav />
         {/* hero section */}
         <HeroSection {...Data} showBtn={false} />
         {/* section 2 img/content */}

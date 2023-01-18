@@ -34,7 +34,7 @@ const Points = () => {
     <>
       <div className="absolute lg:top-[30%] sm:top-[8%] sm:px-[25px] flex w-full sm:flex-col-reverse sm:gap-[130px]">
         <div className="lg:w-[20%] h-full">
-          <ul className="text-[24px] leading-[30px] text-white font-Marcellus font-normal list-none grid gap-5 h-full cursor-pointer backdrop-blur-sm bg-[rgba(29, 29, 27, 0.2)] lg:-rotate-90">
+          <ul className=" text-[24px] leading-[30px] text-white font-Marcellus font-normal list-none grid gap-5 h-full cursor-pointer backdrop-blur-sm bg-[rgba(29, 29, 27, 0.2)] lg:-rotate-90">
             <li
               className="flex items-center px-5 sm:justify-center"
               onClick={() => setPoints(0)}

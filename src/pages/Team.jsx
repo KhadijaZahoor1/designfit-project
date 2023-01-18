@@ -31,12 +31,13 @@ const text = ["Would you like to ", <br className="" />, "work with us?"];
 const Team = () => {
   return (
     <>
+      <Nav />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
+        className="overflow-hidden w-full"
       >
-        <Nav />
         {/* herosection */}
         <HeroSection {...Data} btnText="" showBtn={false} />
         {/* Meet the team */}
