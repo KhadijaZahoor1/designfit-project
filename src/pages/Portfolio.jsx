@@ -27,7 +27,7 @@ const Data = {
     "We are proud of our track record for delivering high quality interior design and fit out projects on tight deadlines across Dubai and Abu Dhabi. Our",
     <br />,
     "team creates spaces encapsulating the ongoing evolution of commercial spaces, creatively incorporating the client's vision, culture, and brand in",
-    <br />,
+    <br className="sm:hidden" />,
     "every project.",
   ],
 };
@@ -86,8 +86,8 @@ const Portfolio = () => {
         {/* hero section */}
         <HeroSection {...Data} btnText="" showBtn={false} />
         {/* section 2 img/headings */}
-        <div className="lg:container lg:mx-auto lg:px-[125px] -mt-[100px]">
-          <div className="lg:mt-[40px]"></div>
+        <div className="lg:container lg:mx-auto lg:px-[125px] -mt-[100px] sm:px-[25px]">
+          <div className="mt-[40px]"></div>
           <div className="grid lg:grid-cols-2 lg:gap-[24px] sm:grid-cols-1 sm:gap-5 ">
             <ImgHeading imgHeading={imgHeading} />
           </div>

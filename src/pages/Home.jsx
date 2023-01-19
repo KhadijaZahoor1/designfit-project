@@ -7,7 +7,7 @@ import crc from "../../src/assests/images/imgCont3.png";
 import Points from "../components/homeComp/Points";
 import servicesBg from "../../src/assests/images/servicesBg.png";
 //import Navbar from "../Navbar";
-import Nav from "../Nav";
+//import Nav from "../Nav";
 import WhiteBtn from "../components/homeComp/WhiteBtn";
 import PalmBtn from "../components/homeComp/PalmBtn";
 import { Link } from "react-router-dom";
@@ -15,6 +15,7 @@ import { motion } from "framer-motion";
 //import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Nav1 from "../Nav1";
 
 const Home = () => {
   AOS.init();
@@ -26,11 +27,11 @@ const Home = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="overflow-hidden w-full"
+        className="overflow-hidden"
       >
         {/* hero section */}
-        <div className="relative bg-mainBg h-[100vh] bg-no-repeat lg:bg-cover sm:bg-center overflow-hidden">
-          <div className="absolute top-[10%] lg:left-[37%] sm:left-[18%] overflow-hidden">
+        <div className="relative bg-mainBg h-[100vh] bg-no-repeat lg:bg-cover sm:bg-center">
+          <div className="absolute top-[10%] lg:left-[37%] sm:left-[18%]">
             <Link to="/">
               {" "}
               <img
@@ -43,7 +44,7 @@ const Home = () => {
             </Link>
           </div>
           <div className="absolute bottom-0 w-full ">
-            <Nav />
+            <Nav1 />
           </div>
           {/* <Navbar /> */}
         </div>
@@ -66,7 +67,7 @@ const Home = () => {
           </p>
         </div>
         {/* section 3 img/content 3 points */}
-        <div className="grid lg:grid-cols-3 lg:gap-[1px]">
+        <div className="grid lg:grid-cols-3 lg:gap-[1px] ">
           <ImgCont />
         </div>
         {/* section 4 quotation */}
@@ -160,7 +161,11 @@ const Home = () => {
         {/* section form */}
         <div className="bg-pattern bg-black bg-cover lg:h-[400px] bg-no-repeat">
           <div className="py-[60px]">
-            <h1 className="text-[50px] leading-[60px] text-white font-Marcellus font-normal text-center">
+            <h1
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              className="text-[50px] leading-[60px] text-white font-Marcellus font-normal text-center"
+            >
               Let’s talk about <br /> your project!
             </h1>
             <div className="py-[50px] lg:container lg:mx-auto flex justify-center gap-5 items-center sm:flex-col">
@@ -168,16 +173,21 @@ const Home = () => {
                 <input
                   data-aos="fade-left"
                   placeholder="Full Name"
-                  className="bg-[#282826] cursor-pointer text-[14px] leading-[16px] placeholder:text-white placeholder:opacity-[0.5] font-Mulish font-normal lg:py-[15px] lg:pl-[20px] lg:pr-[150px] sm:py-[15px] sm:pl-[30px] sm:pr-[100px] focus:outline-none"
+                  className="hover:border-palm hover:border text-white bg-[#282826] cursor-pointer text-[14px] leading-[16px] placeholder:text-white placeholder:opacity-[0.5] font-Mulish font-normal lg:py-[15px] lg:pl-[20px] lg:pr-[150px] sm:py-[15px] sm:pl-[30px] sm:pr-[100px] focus:outline-none"
                 />
                 <input
                   data-aos="fade-left"
                   data-aos-delay="100"
+                  data-aos-duration="4000"
                   placeholder="Email Address"
-                  className="bg-[#282826] cursor-pointer text-[14px] leading-[16px] placeholder:text-white placeholder:opacity-[0.5] font-Mulish font-normal lg:py-[15px] lg:pl-[20px] lg:pr-[150px] sm:py-[15px] sm:pl-[30px] sm:pr-[100px] focus:outline-none"
+                  className="hover:border-palm hover:border text-white bg-[#282826] cursor-pointer text-[14px] leading-[16px] placeholder:text-white placeholder:opacity-[0.5] font-Mulish font-normal lg:py-[15px] lg:pl-[20px] lg:pr-[150px] sm:py-[15px] sm:pl-[30px] sm:pr-[100px] focus:outline-none"
                 />
               </div>
-              <div data-aos="fade-left" data-aos-delay="150">
+              <div
+                data-aos="fade-left"
+                data-aos-delay="200"
+                data-aos-duration="5000"
+              >
                 <PalmBtn btnText={btnText} />
               </div>
             </div>

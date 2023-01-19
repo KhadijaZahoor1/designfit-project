@@ -30,7 +30,7 @@ export const ImgCont = () => {
       {ImgContData.map((item, index) => {
         const { img, title, detail } = item;
         return (
-          <div key={index} className="relative">
+          <div key={index} className="relative bglgMain">
             <span className="absolute left-0 top-0 w-full h-full boxShadow"></span>
             <img
               src={img}

@@ -5,7 +5,7 @@ import { FaTimes } from "react-icons/fa";
 import mobLogo from "../src/assests/images/mobLogo.png";
 //import Button from "./Button";
 
-const Nav = () => {
+const Nav1 = () => {
   let Links = [
     { name: "Services", link: "/services" },
     { name: "Sectors", link: "/sector" },
@@ -48,7 +48,7 @@ const Nav = () => {
 
       <div
         className={`sm:bg-palm sm: sm:py-[50px] sm:h-[100vh]  lg:items-center lg:pb-0 absolute lg:static bg-white lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 transition-all duration-500 ease-in ${
-          open ? "top-20 visible" : "sm:top-[-500px] sm:invisible"
+          open ? "bottom-0 visible" : "sm:top-[-500px] sm:invisible"
         }`}
       >
         <ul className="flex lg:flex-row sm:flex-col lg:gap-x-[90px]">
@@ -66,7 +66,7 @@ const Nav = () => {
             </li>
           ))}
         </ul>
-        <div className="flex justify-center sm:mt-[30px] lg:mt-0">
+        <div className="flex justify-center sm:mt-[70px] lg:mt-0">
           <div className="mobMenuBtn inline-block lg:hidden">
             <button className="uppercase bg-white py-3 px-8 rounded-br-[40px] text-[14px] leading-[16px] text-palm font-Marcellus font-normal">
               <Link to="/project">Get Started</Link>
@@ -85,4 +85,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Nav1;

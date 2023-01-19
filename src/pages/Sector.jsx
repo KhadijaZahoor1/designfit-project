@@ -102,7 +102,7 @@ const Sector = () => {
           </div>
         </div>
         {/* F & B */}
-        <div className="container mx-auto flex lg:px-[50px] py-[80px] sm:flex-col sm:gap-[50px]">
+        <div className="container mx-auto flex lg:px-[50px] my-[50px] sm:flex-col sm:gap-[50px]">
           <div
             className="lg:w-[50%] relative "
             data-aos="zoom-in-right"

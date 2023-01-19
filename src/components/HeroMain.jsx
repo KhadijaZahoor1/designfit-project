@@ -34,11 +34,11 @@ const HeroMain = ({
           </div>
         </div>
         <div className="lg:w-[60%] relative" data-aos="fade-left">
-          <span className="absolute -left-[18px] top-[22px] w-full h-full bg-white opacity-[0.03] rounded-bl-[180px]"></span>
+          <span className="absolute -left-[18px] top-[22px] w-full h-full bg-white opacity-[0.03] lg:rounded-bl-[180px] sm:rounded-bl-[130px]"></span>
           <img
             alt="trendy"
             src={img}
-            className="lg:rounded-bl-[180px] sm:rounded-bl-[140px] lg:pl-0 sm:pl-6 sm:h-[350px] object-cover w-full lg:h-full"
+            className="lg:rounded-bl-[180px] sm:rounded-bl-[110px] lg:pl-0 sm:pl-6 sm:h-[350px] object-cover w-full lg:h-full"
           />
         </div>
       </div>
