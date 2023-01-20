@@ -16,7 +16,7 @@ const HeroMain = ({
 }) => {
   return (
     <>
-      <div className="flex sm:flex-col bg-white h-[630px] w-full overflow-hidden">
+      <div className="flex sm:flex-col bg-white h-[630px] w-full">
         <div className="lg:w-[40%]">
           <div
             className="lg:pt-[150px] lg:pl-[250px] sm:py-[60px] sm:px-[50px]"
@@ -42,7 +42,7 @@ const HeroMain = ({
           />
         </div>
       </div>
-      <div className="bg-black lg:pt-[50px] sm:pt-[150px] pb-[0px]  lg:-mt-[150px] sm:-mt-[150px] w-full overflow-hidden">
+      <div className="bg-black lg:pt-[50px] sm:pt-[150px] pb-[0px]  lg:-mt-[150px] sm:-mt-[150px] w-full ">
         <div className="container mx-auto lg:px-[110px] sm:px-[0px]">
           <img src={icon} alt="icon" className="sm:hidden" />
         </div>

@@ -188,7 +188,7 @@ const Project = () => {
               <BlackBtn btnText="Upload file" />
             </div>
           </div>
-          <label className="rounded-[15px] py-5 text-[14px] leading-[16px] text-pantone1 font-Mulish font-normal flex gap-5 w-full ">
+          <label className="rounded-[15px] py-5 text-[14px] leading-[16px] text-pantone1 font-Mulish font-normal flex gap-5 w-full">
             <input
               type="checkbox"
               className="rounded-[5px] bg-[#f6f6f6] border-none focus:bg-palm focus:outline-none focus:border-none"

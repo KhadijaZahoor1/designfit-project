@@ -29,7 +29,7 @@ export const HeroSection = ({
           </div>
         </div>
         <div className="lg:w-[60%] relative" data-aos="fade-left">
-          <span className="absolute lg:-left-[18px] sm:left-[-5px] top-[22px] w-full h-full bg-white opacity-[0.03] lg:rounded-bl-[180px] sm:rounded-bl-[130px]"></span>
+          <span className="absolute -left-[18px] top-[22px] w-full h-full bg-white opacity-[0.03] lg:rounded-bl-[180px] sm:rounded-bl-[130px]"></span>
           <img
             alt="trendy"
             src={img}
@@ -45,7 +45,7 @@ export const HeroSection = ({
           <h3
             data-aos="fade-up"
             data-duration="1000"
-            className="lg:text-[33px] lg:leading-[38px] sm:text-[20px] sm:leading-[26px] text-white font-Mulish font-bold mt-[50px] "
+            className="lg:text-[33px] lg:leading-[38px] sm:text-[20px] sm:leading-[26px] text-white font-Mulish font-bold mt-[50px]"
           >
             {title}
           </h3>
